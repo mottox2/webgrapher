@@ -27,6 +27,6 @@
   "scripts": {
     "start": "electron .",
     "build:electron": "webpack --config webpack.config.electron.js",
-    "watch:renderer": "webpack-dev-server --config webpack.config.renderer.dev.js --hot --port 8090",
+    "watch:renderer": "webpack-dev-server --config webpack.config.renderer.dev.js --hot --port 8090"
   }
 }
