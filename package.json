@@ -1,0 +1,8 @@
+{
+  "name": "webgrapher",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/mottox2/webgrapher.git",
+  "author": "mottox2 <y.mottox2@gmail.com>",
+  "license": "MIT"
+}
