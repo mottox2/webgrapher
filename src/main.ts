@@ -1,5 +1,5 @@
 import { app, BrowserWindow } from 'electron'
-import { resolve } from 'path'
+import { resolve, join } from 'path'
 
 import { platform } from 'os'
 
@@ -19,8 +19,12 @@ const createWindow = () => {
   }
 
   window = new BrowserWindow(windowData)
-  window.webContents.openDevTools({ mode: 'detach' })
-  window.loadURL('https://github.com')
+  if (true || process.env.ENV === 'dev') {
+    window.webContents.openDevTools({ mode: 'detach' })
+    window.loadURL('http://localhost:8090/')
+  } else {
+    window.loadURL(join('file://', __dirname, 'static/pages/index.html'))
+  }
 
   window.on('closed', () => {
     window = null
