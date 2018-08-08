@@ -73,7 +73,7 @@ class App extends React.Component<Props> {
         <div>
           {captureDataURL && (
             <img
-              style={{ transform: 'scale(0.5)', transformOrigin: 'left top' }}
+              style={{ transform: 'scale(0.25)', transformOrigin: 'left top', maxWidth: 'initial' }}
               src={captureDataURL}
             />
           )}
