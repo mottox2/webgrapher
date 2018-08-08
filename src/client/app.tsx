@@ -38,21 +38,17 @@ class App extends React.Component<Props> {
     const { rect, captureDataURL } = this.state
     return (
       <div>
-        <webview ref={this.webview} src="https://github.com" />
+        <webview ref={this.webview} src="https://github.com" style={{ minHeight: '50vh' }} />
         <form onSubmit={this.capture}>
           <input
             value={rect.x}
             type="number"
-            onChange={e =>
-              this.setState({ rect: { ...rect, x: Number(e.target.value) } })
-            }
+            onChange={e => this.setState({ rect: { ...rect, x: Number(e.target.value) } })}
           />
           <input
             value={rect.y}
             type="number"
-            onChange={e =>
-              this.setState({ rect: { ...rect, y: Number(e.target.value) } })
-            }
+            onChange={e => this.setState({ rect: { ...rect, y: Number(e.target.value) } })}
           />
           <input
             value={rect.width}
