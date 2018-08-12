@@ -6,12 +6,12 @@
   "author": "mottox2 <y.mottox2@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@babel/core": "^7.0.0-beta.56",
-    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.56",
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.56",
-    "@babel/preset-env": "^7.0.0-beta.56",
-    "@babel/preset-react": "^7.0.0-beta.56",
-    "@babel/preset-typescript": "^7.0.0-beta.56",
+    "@babel/core": "^7.0.0-rc.1",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-rc.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-rc.1",
+    "@babel/preset-env": "^7.0.0-rc.1",
+    "@babel/preset-react": "^7.0.0-rc.1",
+    "@babel/preset-typescript": "^7.0.0-rc.1",
     "@types/react": "^16.4.7",
     "@types/react-dom": "^16.0.6",
     "babel-loader": "^8.0.0-beta.4",
@@ -32,6 +32,6 @@
     "watch:renderer": "webpack-dev-server --config webpack.config.renderer.dev.js --hot --port 8090"
   },
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.56"
+    "@babel/cli": "^7.0.0-rc.1"
   }
 }
